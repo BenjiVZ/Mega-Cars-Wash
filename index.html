@@ -1,126 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firebase auth</title>
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-  <!-- toastify -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <!-- custom css -->
-  <link rel="stylesheet" href="./main.css">
-  <script src="./main.js" type="module"></script>
-  <script src="./index.js" type="module"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Mega Car Wash</title>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Firebase App</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item logged-out">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registrarModal">Logear</a>
-          </li>
-          <li class="nav-item logged-out">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#salirModal">Registrar</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link logged-in" href="#" id="logout">Salir</a>
-          </li>
-        </ul>
+  <!-- Encabezado con menú -->
+  <header class="head-father">
+    <nav class="head-son">
+      <div>
+        <img src="src/logos/Logo-principal.png" alt="logotipo de MCW" class="logotipo">
       </div>
-    </div>
-  </nav>
-
-
-  <!-- esto es pa mostrar a los que no son admins las publicaciones -->
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <ul class="list-group posts"></ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- logear Modal -->
-  <div class="modal fade" id="registrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Logear</h1>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          <form id="login-form">
-            <label for="email">Email</label>
-            <input type="email" id="login-email" class="form-control mb-3" placeholder="Email" required>
-            <label for="password">Password</label>
-            <input type="password" id="login-password" class="form-control mb-3" placeholder="******" required>
-            <button type="submit" class="btn btn-primary w-100 mb-4">Login</button>
-          </form>
-
-          <button type="button" id="googleLogin" class="btn btn-light mb-4">Google</button>
-
-          <button type="button" id="facebookLogin" class="btn btn-primary mb-4">Facebook</button>
-
+      <div>
+        <div>
+          <a href="index.html">Inicio</a>
+          <a href="pages/about_us.html">Sobre nosotros</a>
+          <a href="pages/contact.html">Contacto</a>
+          <button class="login-button">Iniciar sesión</button>
         </div>
       </div>
+    </nav>
+    <div>
+      <h1>Mega Car Wash</h1>
+      <hr>
+      <p>"Eslógan."</p>
     </div>
-  </div>
-  </div>
+  </header>
 
-  <!-- registrar Modal -->
-  <div class="modal fade" id="salirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar</h1>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          <form id="signup-form">
-            <label for="email">Email</label>
-            <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" required>
-            <label for="password">Password</label>
-            <input type="password" id="signup-password" class="form-control mb-3" placeholder="******" required>
-            <button type="submit" class="btn btn-primary">Register</button>
-          </form>
-
-        </div>
+  <!-- Apartado de secciones -->
+  <main>
+    
+    <!-- Sección MCW -->
+    <section class="mcw">
+      <div class="info-mcw">
+        <h2>Mega Car Wash</h2>
+        <p>✅ Seguridad garantizada.</p>
+        <p>✅ Buena atención al cliente.</p>
+        <p>✅ Brillo del vehículo garantizado.</p>
+        <p>✅ Lavado en promedio de 3-6 horas.</p>
+        <button class="info-buttons">Información</button>
       </div>
-    </div>
-  </div>
+      <div class="img-mcw">
+        <img src="src/images/Mega-car-wash-image.png" alt="Imagen de MCW">
+      </div>
+    </section>
 
-  <!-- esto es pa agregar las publicaciones -->
-  <form id="task-form">
+    <!-- Sección Tienda de MCW -->
+    <section class="store-mcw">
+      <div class="img-store-mcw">
+        <img src="src/images/Store-mcw-image.jpg" alt="Imagen de la tienda de MCW">
+      </div>
+      <div class="info-store-mcw">
+        <h2>Tienda MCW</h2>
+        <p>✅ Seguridad garantizada.</p>
+        <p>✅ Buena atención al cliente.</p>
+        <p>✅ Brillo del vehículo garantizado.</p>
+        <p>✅ Lavado en promedio de 3-6 horas.</p>
+        <button class="info-buttons">Información</button>
+      </div>
+    </section>
 
-    <label for="title">Title</label>
-    <input type="text" placeholder="Task Title" id="task-title">
+    <!-- Sección Restaurante de MCW -->
+    <section class="restaurant-mcw">
+      <div class="info-restaurant-mcw">
+        <h2>Restaurante MCW</h2>
+        <p>✅ Seguridad garantizada.</p>
+        <p>✅ Buena atención al cliente.</p>
+        <p>✅ Brillo del vehículo garantizado.</p>
+        <p>✅ Lavado en promedio de 3-6 horas.</p>
+        <button class="info-buttons">Información</button>
+      </div>
+      <div class="img-restaurant-mcw">
+        <img src="src/images/Restaurant-mcw-image.jpg" alt="">
+      </div>
+    </section>
+  </main>
 
-    <label for="description">Description</label>
-    <textarea id="task-description" rows="3" placeholder="Task Description"></textarea>
+  <!-- Pie de pagina -->
+  <footer class="copyright-section">
+    <a href="index.html">
+      <img src="src/logos/Logo-principal.png" alt="logotipo de MCW" class="logotipo">
+    </a>
+    
+    <!-- Agregar icono de facebook -->
+    <a href="">
+      ✅
+    </a>
 
-    <button id="btn-task-save">Save</button>
-
-  </form>
-
-  <!-- esto es pa mostrar lo que podei eliminar y editar -->
-  <ul id="task-container" class="list-group posts"></ul>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <p>
+      @ 2023 -
+      <a href="index.html" class="links-footer">
+        Mega Car Wash
+      </a >
+      |
+      <a href="" class="links-footer">
+        Términos de Servicio
+      </a>
+      | Desarrollado por
+      <a href="" class="links-footer">
+        Benjamín Velazco
+      </a>
+      -
+      <a href="" class="links-footer">
+        Daniel Madariaga
+      </a>
+      -
+      <a href="" class="links-footer">
+        Engelberth Rivas
+      </a>
+      .
+    </p>
+  </footer>
 </body>
-
 </html>

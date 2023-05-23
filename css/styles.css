@@ -1,3 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.head-son {
+  background-color: #393737;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logotipo {
+  height: 50px;
+}
+
+.login-button {
+  background-color: rgb(22, 215, 48);
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Apartado de secciones */
+.info-buttons {
+  background-color: #5AD678;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.store-mcw {
+  background-color: #393737;
+  color: #fff;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+footer {
+  background-color: #393737;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.links-footer{
+  color: white;
+}
+
+
+
+
 
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
@@ -18,6 +80,7 @@
   }
 
   .seccion {
+    
     width: 50%;
     padding: 40px;
   }
@@ -66,23 +129,8 @@ button {
   cursor: pointer;
 }
 
-.verde {
-  background-color: rgb(22, 215, 48);
-  color: white;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
 /* secciones */
-.boxpag1os {
-  background-color: #333;
-  color: #fff;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 .boxpag1{
   background-color: #ffffff;
@@ -90,7 +138,6 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -100,14 +147,6 @@ body {
 }
 
 /* menu */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-}
 
 nav ul {
   list-style: none;
@@ -134,30 +173,9 @@ section {
   margin-bottom: 40px;
 }
 
-.imgs {
-  height: 50px;
-}
 
 /* otros */
-.boton1 {
-  background-color: #5AD678;
-  color: white;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
 
-.bien {
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: #5AD678;
-  color: white;
-  text-align: center;
-  line-height: 1;
-  font-size: 1em;
-}
 
 /* .izquieda {
 margin-left: 50px;
@@ -168,12 +186,7 @@ margin-left: 50px;
 } */
 
 /* pie de pagina */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+
 
 /* Estilos para las secciones de la pagina 2 */
 .sec1 {
