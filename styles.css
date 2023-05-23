@@ -35,12 +35,13 @@
   }
 }
 
-/* fondo */
-.fondo
+
+/* fondo 2 */
+.fondo2
 {
   width: 90%;
   height: 500px;
-  background: url("rollover-istobal_pictures-002b-1024x615.jpg");
+  background: url("Bg-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -52,6 +53,8 @@
   margin-bottom: 20px;
   color: #fff;
 }
+
+
 
 /* boton */
 button {
