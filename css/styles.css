@@ -1,8 +1,14 @@
+/* Estilos generales */
+
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
+
+/* ---------------------------------------- */
+
+/* Página inicio */
 
 .head-son {
   background-color: #393737;
@@ -43,8 +49,27 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* ---------------------------------------- */
+
+/* Página sobre nosotros */
+
+.info-history {
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
 
 
+/* ---------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------- */
+
+/* Pie de página */
 
 footer {
   background-color: #393737;
@@ -57,6 +82,7 @@ footer {
   color: white;
 }
 
+/* ---------------------------------------- */
 
 
 
@@ -214,8 +240,3 @@ margin-left: 50px;
   height: 200px;
 }
 
-.secverde {
-  background-color: green;
-  color: white;
-  padding: 20px;
-}

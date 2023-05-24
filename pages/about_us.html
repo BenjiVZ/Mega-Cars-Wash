@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>pagina 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Sobre nosotros</title>
 </head>
 
 <body>
-    <!-- menu -->
-    <header>
-        <img src="BG\logo_lavadero-white.png" alt="" class="imgs">
-        <nav>
-            <ul>
-                <li><a href="pagina1.html">Inicio</a></li>
-                <li><a href="pagina2.html">Sobre nosotros</a></li>
-                <li><a href="pagina3.html">Contacto</a></li>
-                <li><button class="verde"> <a href="#">Iniciar seccion</a> </button></li>
-                <li><button> <a href="#">registrarse</a> </button></li>
-            </ul>
+    <!-- Menú -->
+    <header class="head-father">
+        <nav class="head-son">
+            <div>
+                <img src="../src/logos/Logo-principal.png" alt="logotipo de MCW" class="logotipo">
+            </div>
+            <div>
+                <div>
+                    <a href="../index.html">Inicio</a>
+                    <a href="about_us.html">Sobre nosotros</a>
+                    <a href="contact.html">Contacto</a>
+                    <button class="login-button">Iniciar sesión</button>
+                </div>
+            </div>
         </nav>
     </header>
+<main>
 
-    <!-- seccion 1 -->
-    <section class="sec1">
-        <h1>Sobre nosotros</h1>
-        <div class="secverde">
-        <p>Información sobre la empresa desde sus inicios y una
-            breve reseña</p>
+    <!-- Reseña histórica -->
+    <section class="history">
+        <h2>Sobre nosotros</h2>
+        <hr>
+        <div class="info-history">
+            <p>Información sobre la empresa desde sus inicios y una breve reseña</p>
         </div>
     </section>
 
-    <!-- seccion 2 -->
-    <section class="boxpag2">
-        <div class="izquierda">
-            <h1>Ubicación y horarios</h1>
-            <p>Ubicacion</p>
-            <p>Horario 1</p>
-            <p>Horario 2</p>
+    <!-- Ubicación y horarios -->
+    <section class="locatios">
+        <div class="info-locations">
+            <h2>Ubicación y horarios</h2>
+            <hr>
+            <p>✅ Ubicación del MCW</p>
+            <p>✅ Horario</p>
+            <p>✅ Ubicación de la tienda</p>
+            <p>✅ Horario</p>
         </div>
-        <div class="derecha">
-            <img src="BG\S462MLFWCBCYHERSU6BGIJYCIU.jpg" alt="" class="imgG">
+        <div class="img-locations">
+            <img src="../src/images/Map-locations.jpg" alt="Imagen de ubicación">
+            <img src="../src/images/Map-locations.jpg" alt="Imagen de ubicación">
         </div>
     </section>
 
-    <!-- seccion 3 -->
-    <section class="sec3">
-        <h1>Sección 3</h1>
+    <!-- Fotos -->
+    <section class="photos">
+        <h2>Sección de fotos</h2>
     </section>
 
-    <!-- pie de pagina -->
-    <footer>
-        <p>Derechos de autor © 2023</p>
+</main>
+
+    <!-- Pie de pagina -->
+    <footer class="copyright-section">
+        <a href="index.html">
+            <img src="src/logos/Logo-principal.png" alt="logotipo de MCW" class="logotipo">
+        </a>
+
+        <!-- Agregar icono de facebook -->
+        <a href="">
+            ✅
+        </a>
+
+        <p>
+            @ 2023 -
+            <a href="../index.html" class="links-footer">
+                Mega Car Wash
+            </a>
+            |
+            <a href="" class="links-footer">
+                Términos de Servicio
+            </a>
+            | Desarrollado por
+            <a href="" class="links-footer">
+                Benjamín Velazco
+            </a>
+            -
+            <a href="" class="links-footer">
+                Daniel Madariaga
+            </a>
+            -
+            <a href="" class="links-footer">
+                Engelberth Rivas
+            </a>
+            .
+        </p>
     </footer>
-
 </body>
-
 </html>
